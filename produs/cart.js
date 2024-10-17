@@ -134,7 +134,7 @@ checkout.addEventListener("click", () => {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   if (isMobile) {
-    window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.location.href = `tel:${phoneNumber}`;
   } else {
     window.open(`https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`, '_blank');
   }
